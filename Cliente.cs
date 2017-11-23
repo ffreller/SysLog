@@ -58,7 +58,7 @@ namespace SysLog
             }
             
         }
-        public void Logout()
+        public void Logout(){}
 
         static string encripSenha (string senha)   
         {
