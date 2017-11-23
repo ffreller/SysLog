@@ -1,0 +1,10 @@
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\bin\Debug\netcoreapp2.0\SysLog.deps.json
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\bin\Debug\netcoreapp2.0\SysLog.runtimeconfig.json
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\bin\Debug\netcoreapp2.0\SysLog.runtimeconfig.dev.json
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\bin\Debug\netcoreapp2.0\SysLog.dll
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\bin\Debug\netcoreapp2.0\SysLog.pdb
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.csproj.CoreCompileInputs.cache
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.AssemblyInfoInputs.cache
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.AssemblyInfo.cs
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.dll
+C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.pdb
