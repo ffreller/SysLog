@@ -22,8 +22,43 @@ namespace SysLog
             this.senha = Console.ReadLine();
             StreamWriter cadastro = new StreamWriter("CadUsuario.csv", true);
             cadastro.WriteLine(nome + ";" + email + ";" + encripSenha(senha));
-            Console.WriteLine("Cadastro efetuado com sucesso!");   
+            Console.WriteLine("Cadastro efetuado com sucesso!"); 
+            cadastro.Close();  
         }
+
+        public void Logar()
+        {
+             bool senha = false;
+             Console.WriteLine("Qual é seu email?");
+             this.email = Console.ReadLine();
+             StreamReader ler = new StreamReader("CadUsuario.csv");
+             string linha;
+             while((linha=ler.ReadLine())!=null)
+             {
+                string[] dados = linha.Split(';');
+                if (dados[2]==this.email)
+                {
+                    break;
+                    Console.WriteLine("Qual é sua senha?");
+                    this.senha = Console.ReadLine();
+                    if(this.senha == dados[3])
+                    {
+                        Console.WriteLine("Login efetuado!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Senha incorreta");
+                    }
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Email não encontrado");
+                }
+            }
+            
+        }
+        public void Logout()
 
         static string encripSenha (string senha)   
         {
