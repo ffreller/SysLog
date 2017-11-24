@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace SysLog
 {
     class Program
@@ -23,11 +22,13 @@ namespace SysLog
                         break;
 
                         case 2:
-                        
+                        Cliente cliente1 = new Cliente();
+                        cliente1.Logar();
                         break;
 
-
                         case 3:
+                        Cliente cliente2 = new Cliente();
+                        cliente2.Sair();
                         
                         break;
 

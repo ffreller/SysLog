@@ -8,3 +8,13 @@ C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\Sy
 C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.AssemblyInfo.cs
 C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.dll
 C:\Users\40809588897\Desktop\Programar\Semana8\SysLog\obj\Debug\netcoreapp2.0\SysLog.pdb
+C:\Users\Fabio Freller\Documents\Programar\SysLog\obj\Debug\netcoreapp2.0\SysLog.csproj.CoreCompileInputs.cache
+C:\Users\Fabio Freller\Documents\Programar\SysLog\obj\Debug\netcoreapp2.0\SysLog.AssemblyInfoInputs.cache
+C:\Users\Fabio Freller\Documents\Programar\SysLog\obj\Debug\netcoreapp2.0\SysLog.AssemblyInfo.cs
+C:\Users\Fabio Freller\Documents\Programar\SysLog\obj\Debug\netcoreapp2.0\SysLog.dll
+C:\Users\Fabio Freller\Documents\Programar\SysLog\obj\Debug\netcoreapp2.0\SysLog.pdb
+C:\Users\Fabio Freller\Documents\Programar\SysLog\bin\Debug\netcoreapp2.0\SysLog.deps.json
+C:\Users\Fabio Freller\Documents\Programar\SysLog\bin\Debug\netcoreapp2.0\SysLog.runtimeconfig.json
+C:\Users\Fabio Freller\Documents\Programar\SysLog\bin\Debug\netcoreapp2.0\SysLog.runtimeconfig.dev.json
+C:\Users\Fabio Freller\Documents\Programar\SysLog\bin\Debug\netcoreapp2.0\SysLog.dll
+C:\Users\Fabio Freller\Documents\Programar\SysLog\bin\Debug\netcoreapp2.0\SysLog.pdb
