@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fabio Freller\\.nuget\\packages\\": {},
+    "C:\\Users\\40809588897\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\SysLog.csproj",
+      "projectUniqueName": "C:\\Users\\40809588897\\Desktop\\Programar\\Semana8\\SysLog\\SysLog.csproj",
       "projectName": "SysLog",
-      "projectPath": "C:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\SysLog.csproj",
-      "packagesPath": "C:\\Users\\Fabio Freller\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\obj\\",
+      "projectPath": "C:\\Users\\40809588897\\Desktop\\Programar\\Semana8\\SysLog\\SysLog.csproj",
+      "packagesPath": "C:\\Users\\40809588897\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\40809588897\\Desktop\\Programar\\Semana8\\SysLog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fabio Freller\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\40809588897\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

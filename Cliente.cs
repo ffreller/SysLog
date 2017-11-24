@@ -8,6 +8,12 @@ namespace SysLog
 {
     public class Cliente
     {
+        public delegate void Deleg1(string email);
+        public event Deleg1 Loginsup;
+        
+        public delegate void Deleg2(string email);
+        public event Deleg2 Logoutsup;
+
         public string nome { get; set; }
         public string email { get; set; }
         public string senha { get; set; }
@@ -52,8 +58,7 @@ namespace SysLog
                     {
                         Console.WriteLine("Login efetuado!");
                         string email = dados[1];
-                        Del del1 = new Del();
-                        del1.Loginsup += new Del.Deleg1(LoginReg);
+                        this.Loginsup(email);
                     }
                     
                     else
@@ -63,8 +68,9 @@ namespace SysLog
                     }
                 }
             }
+            ler.Close();    
             return;
-        ler.Close();    
+        
         }
         public void Sair()
         {
@@ -77,7 +83,8 @@ namespace SysLog
                 string[] dados = linha.Split(';');
                 if (dados[1]==this.email)
                 {
-                    
+                    Console.WriteLine("Logout concluído com sucesso!");
+                    this.Logoutsup(email);
                 }
             }
         }    
@@ -93,75 +100,6 @@ namespace SysLog
 
             return Convert.ToBase64String(senhaModificada);
 
-        }
-
-        public void LoginReg(string email)
-        {
-            StreamReader ler = new StreamReader("CadUsuario.csv");
-            string linha;
-            while((linha=ler.ReadLine())!=null)
-            {
-                string[] dados = linha.Split(';');
-                if (dados[1]==email)
-                {
-                    
-                    if(!File.Exists("Superior.csv"))
-                    {   
-                        StreamWriter criarquivo = new StreamWriter("Superior.csv", true);
-                        criarquivo.WriteLine("Nome do Usuário;Email;Login ou Logout;Data do Login/Logout");
-                        criarquivo.Close();
-                    }
-                    StreamWriter superior = new StreamWriter("Superior.csv", true);
-                    superior.WriteLine(dados[0] + ";" +dados[1] + ";Login;" + DateTime.Now);
-                    superior.Close();
-                    
-                    if (!File.Exists("LogSistema.csv"))
-                    {
-                        StreamWriter criarquivo = new StreamWriter("LogSistema.csv", true);
-                        criarquivo.WriteLine("Nome do Usuário;Email;Login ou Logout;Data do Login/Logout");
-                        criarquivo.Close();
-                    }
-                    StreamWriter log = new StreamWriter("LogSistema.csv", true);
-                    log.WriteLine(dados[0] + ";" +dados[1] + ";Login;" + DateTime.Now);
-                    ler.Close();
-                    log.Close();
-                    break;
-                }
-            
-            }
-        }
-        static void LogoutSuperior(string email)
-        {
-            StreamReader ler = new StreamReader("CadUsuario.csv");
-            string linha;
-            while((linha=ler.ReadLine())!=null)
-            {
-                string[] dados = linha.Split(';');
-                if (dados[1]==email)
-                {
-                    if (!File.Exists("Superior.csv"))
-                    {
-                        StreamWriter criarquivo = new StreamWriter("Superior.csv", true);
-                        criarquivo.WriteLine("Nome do Usuário;Email; Login ou Logout; Data do Login/Logout");
-                        criarquivo.Close();
-                    }
-                    StreamWriter superior = new StreamWriter("Superior.csv", true);
-                    superior.WriteLine(dados[0] + ";" +dados[1] + ";Logout;" + DateTime.Now);
-                    superior.Close();
-                    if (!File.Exists("LogSistema.csv"))
-                    {
-                        StreamWriter criarquivo = new StreamWriter("LogSistema.csv", true);
-                        criarquivo.WriteLine("Nome do Usuário;Email;Login ou Logout;Data do Login/Logout");
-                        criarquivo.Close();
-                    }
-                    StreamWriter log = new StreamWriter("LogSistema.csv", true);
-                    log.WriteLine(dados[0] + ";" +dados[1] + ";Login;" + DateTime.Now);
-                    log.Close();
-                    ler.Close();
-                    break;
-                }
-            
-            }
         }
     }
 }
