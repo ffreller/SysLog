@@ -40,8 +40,8 @@ namespace SysLog
              Console.WriteLine("Qual é seu email?");
              this.email = Console.ReadLine();
              StreamReader ler = new StreamReader("CadUsuario.csv");
-             string linha = ler.ReadLine();
-             while(linha!=null)
+             string linha;
+             while((linha=ler.ReadLine())!=null)
              {
                 string[] dados = linha.Split(';');
                 if (dados[1]==this.email)
@@ -55,18 +55,19 @@ namespace SysLog
                         Del del1 = new Del();
                         del1.Loginsup += new Del.Deleg1(LoginReg);
                     }
+                    
                     else
                     {
                         Console.WriteLine("Senha incorreta");
                         return;
                     }
                     
+                    
                 }
-                else
-                {
-                    Console.WriteLine("Email não encontrado");
-                }
-                break;
+            }
+            if (linha==null)
+            {
+                Console.WriteLine("Email náo encontrado");
             }
         ler.Close();    
         }
