@@ -61,14 +61,9 @@ namespace SysLog
                         Console.WriteLine("Senha incorreta");
                         return;
                     }
-                    
-                    
                 }
             }
-            if (linha==null)
-            {
-                Console.WriteLine("Email náo encontrado");
-            }
+            return;
         ler.Close();    
         }
         public void Sair()

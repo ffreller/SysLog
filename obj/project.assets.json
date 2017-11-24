@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\SysLog.csproj",
+      "projectUniqueName": "C:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\SysLog.csproj",
       "projectName": "SysLog",
-      "projectPath": "c:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\SysLog.csproj",
+      "projectPath": "C:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\SysLog.csproj",
       "packagesPath": "C:\\Users\\Fabio Freller\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\obj\\",
+      "outputPath": "C:\\Users\\Fabio Freller\\Documents\\Programar\\SysLog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
