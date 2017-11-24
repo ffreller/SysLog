@@ -3,7 +3,6 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-
 namespace SysLog
 {
     public class Cliente
@@ -32,13 +31,10 @@ namespace SysLog
                 criarquivo.WriteLine("Nome;E-mail;Senha Criptografada");
                 criarquivo.Close();
             }
-                     
             StreamWriter cadastro = new StreamWriter("CadUsuario.csv", true);
             cadastro.WriteLine(nome + ";" + email + ";" + encripSenha(senha));
             Console.WriteLine("Cadastro efetuado com sucesso!"); 
             cadastro.Close();  
-            
-            
         }
 
         public void Logar()
@@ -70,7 +66,6 @@ namespace SysLog
             }
             ler.Close();    
             return;
-        
         }
         public void Sair()
         {
@@ -87,8 +82,9 @@ namespace SysLog
                     this.Logoutsup(email);
                 }
             }
+            ler.Close();
+            return;
         }    
-
         static string encripSenha (string senha)   
         {
             byte[] senhaOriginal;
@@ -97,9 +93,7 @@ namespace SysLog
             senhaOriginal = Encoding.Default.GetBytes(senha);
             md5 = SHA512.Create();
             senhaModificada = md5.ComputeHash(senhaOriginal);
-
             return Convert.ToBase64String(senhaModificada);
-
         }
     }
 }

@@ -13,7 +13,7 @@ namespace SysLog
             Console.WriteLine("");
             Console.WriteLine("Digite um das opções abaixo para seguir: ");
             int opcao;
-             Cliente cliente = new Cliente();
+            Cliente cliente = new Cliente();
             do
             {   
                 Console.WriteLine("1-Cadastrar\n2-Logar\n3-Logout\n9-Sair");
